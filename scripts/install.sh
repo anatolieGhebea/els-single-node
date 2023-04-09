@@ -32,4 +32,3 @@ echo "Done!"
 echo "WARNING!!"
 echo "  Before running 'setconfig.sh' be sure to edit the settings in elasticsearch.yml"
 echo "  and jvm_override.options"
-
