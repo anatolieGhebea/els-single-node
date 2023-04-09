@@ -1,0 +1,20 @@
+✅ Elasticsearch security features have been automatically configured!
+✅ Authentication is enabled and cluster connections are encrypted.
+
+ℹ️  Password for the elastic user (reset with `bin/elasticsearch-reset-password -u elastic`):
+  4jMy2BKg8E=QSBB2JDlr
+
+ℹ️  HTTP CA certificate SHA-256 fingerprint:
+  a2e18df39caf673361f23f6ccc15810d14338e74ac905bfbf68055d4a70fe70d
+
+ℹ️  Configure Kibana to use this cluster:
+• Run Kibana and click the configuration link in the terminal when Kibana starts.
+• Copy the following enrollment token and paste it into Kibana in your browser (valid for the next 30 minutes):
+  eyJ2ZXIiOiI4LjYuMiIsImFkciI6WyIxNzIuMzEuNDEuMTI5OjkyMDAiXSwiZmdyIjoiYTJlMThkZjM5Y2FmNjczMzYxZjIzZjZjY2MxNTgxMGQxNDMzOGU3NGFjOTA1YmZiZjY4MDU1ZDRhNzBmZTcwZCIsImtleSI6InpkVWpUWWNCMDU0dDhIYjY2TWVpOnpjTDVCM1dTVEZhUTlqMzgzYjMyLXcifQ==
+
+ℹ️ Configure other nodes to join this cluster:
+• Copy the following enrollment token and start new Elasticsearch nodes with `bin/elasticsearch --enrollment-token <token>` (valid for the next 30 minutes):
+  eyJ2ZXIiOiI4LjYuMiIsImFkciI6WyIxNzIuMzEuNDEuMTI5OjkyMDAiXSwiZmdyIjoiYTJlMThkZjM5Y2FmNjczMzYxZjIzZjZjY2MxNTgxMGQxNDMzOGU3NGFjOTA1YmZiZjY4MDU1ZDRhNzBmZTcwZCIsImtleSI6Ink5VWpUWWNCMDU0dDhIYjY2TWVkOkZ4eWp4SU1MVG5DUFB2MkZwdVhNcmcifQ==
+
+  If you're running in Docker, copy the enrollment token and run:
+  `docker run -e "ENROLLMENT_TOKEN=<token>" docker.elastic.co/elasticsearch/elasticsearch:8.6.2`
