@@ -14,7 +14,11 @@ echo "Unpacking..."
 tar -xzf elasticsearch-8.6.2-linux-x86_64.tar.gz
 rm -rf elasticsearch-8.6.2-linux-x86_64.tar.gz*
 
-export ES_HOME="$PWD/elasticsearch-8.6.2"
+echo 'Setting home path'
+
+echo 'export ES_HOME="~/elasticsearch-8.6.2"' >> ~/.bashrc
+source ~/.bashrc
+
 echo $ES_HOME
 
 cd ./els-single-node/config
